@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render_to_response
 
 
 def welcome(request):
-    return HttpResponse("Hello")
+    return render_to_response("welcome.html", locals())
