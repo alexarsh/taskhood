@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from tasks.views import *
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -6,7 +7,7 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
     # Example:
-    # (r'^taskhood/', include('taskhood.foo.urls')),
+    (r'^', welcome),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
