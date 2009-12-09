@@ -7,6 +7,8 @@ import os
 
 urlpatterns = patterns('',
     # Example:
+    # r'^$' = site / root urls default page
+    # include('taskhood.tasks.urls') points to the tasktood\tasks\urls.py file
     (r'^$', include('taskhood.tasks.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
