@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="static/css/main.css" />
+		<style type="text/css">
+			* {margin: 0; paddding: 0}
+			body {text-align: center; font-family: helvetica, verdana}
+			#container{width: 960px; margin: 30px auto; text-align: left}
+			#header{margin: 0 0 20px}
+			#infoContainer{float: right; width: 154px}
+			#main div {background-color: #ddd; border: thin solid #000}
+			.uiContainer {float: left; width: 200px; height: 604px}
+			.uiContainer2 {float: left; width: 600px; height: 604px}
+			.info {height: 300px}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="header">Here will be page header</h1>
+			<div id="main">
+				{% block main %}
+				{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>
